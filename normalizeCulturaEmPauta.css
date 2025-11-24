@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* Fonte - import e classes para peso(weight) */
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+.stack-100{
+    font-family: 'Stack Sans Headline', sans-serif;
+    font-weight: 100;
+}
+.stack-200{
+    font-family: 'Stack Sans Headline', sans-serif;
+    font-weight: 200;
+}
+.stack-300{
+    font-family: 'Stack Sans Headline', sans-serif;
+    font-weight: 300;
+}
+.stack-400{
+    font-family: 'Stack Sans Headline', sans-serif;
+    font-weight: 400;
+}
+.stack-500{
+    font-family: 'Stack Sans Headline', sans-serif;
+    font-weight: 500;
+}
+.stack-600{
+    font-family: 'Stack Sans Headline', sans-serif;
+    font-weight: 600;
+}
+.stack-700{
+    font-family: 'Stack Sans Headline', sans-serif;
+    font-weight: 700;
+}
+
+/* Cores do tema - cor do texto */
+.goiaba{
+    color:#BF2A52
+}
+.rosa{
+    color: #D96C80;
+}
+.folha{
+    color: #BFB74B;
+}
+.leite{
+    color: #F2E9CE;
+}
+.laranja{
+    color: #F2AE2E;
+}
+
+/* Cores do tema - cor do fundo */
+.goiababg{
+    background-color:#BF2A52
+}
+.rosabg{
+    background-color: #D96C80;
+}
+.folhabg{
+    background-color: #BFB74B;
+}
+.leitebg{
+    background-color: #F2E9CE;
+}
+.laranjabg{
+    background-color: #F2AE2E;
+}
+
+/* Efeito hover */
+.suave-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.suave-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.suave-hover-sem-sombra {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.suave-hover-sem-sombra:hover {
+    transform: scale(1.02);
+}
+
+body {
+    font-family: 'Stack Sans Headline', sans-serif;
+    background: #F2E9CE;
+}
