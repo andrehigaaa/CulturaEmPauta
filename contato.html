@@ -92,6 +92,14 @@
             color: #F2E9CE;
         }
 
+        input.is-invalid, textarea.is-invalid {
+            border-color: #dc3545 !important;
+        }
+
+        input.is-valid, textarea.is-valid {
+            border-color: #28a745 !important;
+        }
+
     </style>
 
     <title>Contato - Cultura em Pauta</title>
@@ -208,30 +216,34 @@
                         </div>
 
                         <!-- Form inputs -->
-                        <form class="d-flex flex-column gap-3 w-100" method="post">
+                        <form id="form" class="d-flex flex-column gap-3 w-100" method="post">
 
                             <!-- Nome -->
                             <div class="d-flex flex-column gap-1 w-100">
                             <label for="name" class="form-label">Nome</label required>
                             <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome...">
+                            <small class="text-danger erro"></small>
                             </div>
 
                             <!-- Email -->
                             <div class="d-flex flex-column gap-1 w-100">
                             <label for="email" class="form-label">Email <i class="bi bi-envelope-at"></i></label required>
                             <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email...">
+                            <small class="text-danger erro"></small>
                             </div>
 
                             <!-- Confirmação Email -->
                             <div class="d-flex flex-column gap-1 w-100">
                             <label for="confirm-email" class="form-label">Confirmação do email <i class="bi bi-envelope-at"></i></label required>
                             <input type="email" name="confirm-email" id="confirm-email" class="form-control" placeholder="Confirme seu email...">
+                            <small class="text-danger erro"></small>
                             </div>
 
                             <!-- Mensagem -->
                             <div class="d-flex flex-column gap-1 w-100">
                             <label for="mensagem" class="form-label">Mensagem <i class="bi bi-chat-square-text"></i></label required>
                             <textarea name="mensagem" id="mensagem" class="form-control" placeholder="Digite sua mensagem..."></textarea>
+                            <small class="text-danger erro"></small>
                             </div>
 
                             <!-- Botão -->
